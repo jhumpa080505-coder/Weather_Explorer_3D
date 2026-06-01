@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Globe Explorer</title>
+  <script src="https://unpkg.com/globe.gl"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ── SEARCH BAR (centered, top) ── -->
+  <div class="search-box">
+    <div class="search-inner">
+      <span class="search-icon">⌕</span>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search a country or city…"
+        autocomplete="on" 
+      >
+      <button onclick="searchLocation()">Explore</button>
+    </div>
+  </div>
+
+  <!-- ── WEATHER CARD ── -->
+  <div id="weatherCard" class="weather-card" style="display:none;"></div>
+
+  <!-- ── GLOBE CANVAS ── -->
+  <div id="globeViz"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- bdae0fbf53459bd1f210b981ce9501b6 -->

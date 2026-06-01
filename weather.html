@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather Details</title>
+
+  <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="background-overlay"></div>
+
+  <!-- Main Container -->
+  <div class="weather-page">
+
+    <!-- Back Button -->
+    <button class="back-btn" onclick="goBack()">
+      ← Back
+    </button>
+
+    <!-- City Name -->
+    <h1 id="cityName">Loading...</h1>
+
+    <!-- Current Weather -->
+    <div class="current-weather" id="currentWeather">
+
+    </div>
+
+    <h2 class="section-title">
+      HOURLY WEATHER
+    </h2>
+
+   <div id="todayHourly"
+        class="today-hourly">
+    </div> 
+
+    <!-- <div id="currentWeather" class="glass"></div> -->
+
+<!-- AQI SECTION -->
+<div id="aqiSection" class="aqi-section glass">
+
+  <h2>Air Quality Index</h2>
+
+  <div id="aqiValue" class="aqi-value">
+    
+  </div>
+
+  <div id="aqiLevel" class="aqi-level">
+    Loading...
+  </div>
+
+</div>
+
+<!-- FORECAST -->
+
+
+    <!-- Forecast -->
+    <h2 class="forecast-title">
+      7 Days Forecast
+    </h2>
+
+    <div class="forecast-container" id="forecastContainer">
+
+    </div>
+
+  </div>
+
+  <script src="weather.js"></script>
+
+</body>
+
+</html>
