@@ -506,7 +506,7 @@ async function getWeather(){
     const response =
       await fetch(url);
 
-    const response = await fetch(url);
+    
 
 const text = await response.text();
 
