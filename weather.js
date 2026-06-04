@@ -506,8 +506,17 @@ async function getWeather(){
     const response =
       await fetch(url);
 
-    const data =
-      await response.json();
+    const response = await fetch(url);
+
+const text = await response.text();
+
+console.log("RAW RESPONSE:", text);
+
+if (!response.ok) {
+  throw new Error(text);
+}
+
+const data = JSON.parse(text);
 
     console.log(data);
     console.log(response.status);
