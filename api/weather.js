@@ -1,5 +1,5 @@
 
-module.exports = async (req, res) =&gt; {
+module.exports = async (req, res) => {
   const { lat, lng } = req.query;
   const apiKey = process.env.WEATHER_API_KEY;
 
