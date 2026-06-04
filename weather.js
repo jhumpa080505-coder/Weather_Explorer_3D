@@ -499,11 +499,8 @@ function setWeatherVideo(condition){
 
 async function getWeather(){
 
-  const apiKey = "API_KEY";
-
-  const url =
- `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lng}&days=7&aqi=yes&alerts=no`;
-
+  const url = `/api/weather?lat=${lat}&lng=${lng}`;
+  console.log(url);
   try{
 
     const response =
@@ -513,6 +510,7 @@ async function getWeather(){
       await response.json();
 
     console.log(data);
+  console.log(response.status);
 
    if (data.error) {
     alert(data.error.message);
