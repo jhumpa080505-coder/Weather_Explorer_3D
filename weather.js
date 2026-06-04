@@ -500,7 +500,7 @@ function setWeatherVideo(condition){
 async function getWeather(){
 
   const url = `/api/weather?lat=${lat}&lng=${lng}`;
-  console.log(url);
+  console.log("URL:", url);
   try{
 
     const response =
@@ -510,7 +510,7 @@ async function getWeather(){
       await response.json();
 
     console.log(data);
-  console.log(response.status);
+    console.log(response.status);
 
    if (data.error) {
     alert(data.error.message);
