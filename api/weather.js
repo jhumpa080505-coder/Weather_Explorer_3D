@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
     const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${lng}&days=7&aqi=yes&alerts=no`;
     const response = await fetch(url);
     const data = await response.json();
-    const data = await response.json();
+    
 
     if (!response.ok) {
       console.error(data);
